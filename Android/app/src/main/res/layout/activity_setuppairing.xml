@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgd_blue_bis">
+
+
+
+    <TextView
+        android:id="@+id/setup_title_TV"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="@string/pair_device"/>
+
+    <LinearLayout
+        android:id="@+id/setup_gauche_LL"
+        android:layout_below="@+id/setup_title_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:background="@null">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setup_IV4"
+            android:id="@+id/setupP_TV1"
+            android:text="You"
+
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <com.foxycode.testapp.Util.CircularImageView
+            android:id="@+id/setup_IV4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/interro"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            app:border_color="@color/purple"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setup_droite_LL"
+        android:layout_below="@+id/setup_title_TV"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@null">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:id="@+id/setupP_TV2"
+            android:layout_marginRight="40dp"
+            android:text="Her/His" />
+
+        <com.foxycode.testapp.Util.CircularImageView
+            android:id="@+id/setup_IV3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/interro"
+            app:border_color="@color/cyan"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setupP_tv3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setup_droite_LL"
+        android:layout_marginTop="26dp"
+        android:text="@string/setup_code"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupP_tv3"
+        android:layout_centerHorizontal="true"
+        android:text="CbvMSNDGJ"
+        android:id="@+id/setupP_tv4"
+        />
+
+    <TextView
+        android:id="@+id/setupP_tv5"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupP_tv4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/setup_explaination"/>
+
+
+    <TextView
+        android:id="@+id/setupP_tv6"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupP_tv4"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:text="@string/setup_waiting"/>
+
+
+    <EditText
+        android:id="@+id/setupP_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:hint="code"
+        android:layout_below="@+id/setupP_tv5"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/setupP_B"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="PAIR"
+        android:layout_below="@+id/setupP_ET"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

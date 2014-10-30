@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/createU_title_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            />
+
+
+        <ImageView
+            android:id="@+id/createU_IV"
+            android:layout_below="@id/createU_title_TV"
+            android:layout_centerHorizontal="true"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop="-15dp"
+            android:src = "@drawable/spalsh_02"
+            android:drawable="@android:color/transparent" />
+
+        <EditText
+            android:id="@+id/splashscreen_PWD_ET"
+            android:layout_below="@id/createU_IV"
+            android:layout_width = "150dp"
+            android:layout_height = "wrap_content"
+            android:layout_alignLeft="@+id/createU_title_TV"
+            android:inputType="textPassword"
+            android:visibility="gone"
+            android:text="qwertyu8!"
+            android:layout_marginTop="-15dp"
+            />
+        <Button
+            android:id="@+id/splashscreen_OK_ET"
+            android:layout_below="@id/createU_IV"
+            android:text="Go"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="-15dp"
+            android:layout_alignRight="@+id/createU_title_TV" />
+
+
+    </RelativeLayout>

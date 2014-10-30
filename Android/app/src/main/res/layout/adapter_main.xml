@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_Adapt_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/main_Adapt_select_IV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@color/bgd_blue"/>
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_Adapt_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.foxycode.testapp.Activity.MainActivity$PlaceholderFragment">
+
+
+
+    <com.foxycode.testapp.Util.TextViewWithTriangle
+        android:id="@+id/main_Adapt_TV"
+        android:layout_width="250dp"
+        android:minHeight="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/main_Adapt_gauche_RIV"
+        android:layout_toLeftOf="@+id/main_Adapt_droite_RIV"
+        android:paddingLeft="60px"
+        android:paddingRight="60px"/>
+
+    <com.foxycode.testapp.Util.ImageViewWithTriangle
+        android:id="@+id/main_Adapt_IV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/main_Adapt_gauche_RIV"
+        android:layout_toLeftOf="@+id/main_Adapt_droite_RIV"
+        android:src="@drawable/camera_icon"/>
+
+
+    <com.foxycode.testapp.Util.ImageViewWithTriangle
+        android:id="@+id/main_Adapt_IV2"
+
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:triangle_way="true"
+        android:layout_toRightOf="@+id/main_Adapt_gauche_RIV"
+        android:layout_toLeftOf="@+id/main_Adapt_droite_RIV"
+        android:src="@drawable/camera_icon"/>
+
+
+    <com.foxycode.testapp.Util.CircularImageView
+        android:id="@+id/main_Adapt_gauche_RIV"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/camera_icon"
+        />
+
+    <ImageView
+        android:id="@+id/main_Adapt_statutIm_IV"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_Adapt_IV"
+        android:layout_alignRight="@+id/main_Adapt_IV"
+        android:src="@drawable/send_"/>
+
+    <ImageView
+        android:id="@+id/main_Adapt_statutTe_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/main_Adapt_TV"
+        android:layout_alignRight="@+id/main_Adapt_TV"
+        android:paddingRight="100px"
+        android:src="@drawable/send_"/>
+
+    <com.foxycode.testapp.Util.CircularImageView
+
+        android:id="@+id/main_Adapt_droite_RIV"
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/camera_icon"/>
+
+
+
+</RelativeLayout>
+
+</FrameLayout>
