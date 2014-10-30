@@ -1,0 +1,36 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
+
+#GCM
+
+POST	/postGcmId                  controllers.CloudMessage.registerGCM()
+
+
+#gve
+POST	/postPairingPwd				controllers.Application.pairWithPartner()
+POST	/loginUser					controllers.Application.loginUser()
+POST	/loginWithImage				controllers.Application.signInwithPicture()
+POST	/signIn						controllers.Application.signInUser()
+
+#   event posts
+POST	/message						controllers.Application.saveMessage()
+
+POST	/deleteContent						controllers.Application.deleteContent()
+POST	/image						controllers.ImageController.postImage()
+GET		/image					controllers.ImageController.getImage(pic_url: String, userId: String,password:String	)
+GET		/imagecontent			controllers.ImageController.getImageContent(pic_id: String, userId: String,password:String	)
+
+POST	/text					controllers.MessageController.postMessageContent()
+GET		/textcontent			controllers.MessageController.getMessageContent(text_id: String, userId: String,password:String	)
+#test
+POST 	/pairedTest					controllers.Testy.sendGcmPairingConfirm()
+POST 	/testId					controllers.Testy.testId()
+
+
